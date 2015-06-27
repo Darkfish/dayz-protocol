@@ -13,7 +13,7 @@ class general(object):
         self.RandomTable()
 
     def NextValue(self, lfsr):
-        """Linear feedback shift registe thing"""
+        """Linear feedback shift register thing"""
         return numpy.int32(lfsr >> 1) ^ (-(lfsr & 1) & 0xB400)
 
     def RandomTable(self):
